@@ -1,0 +1,672 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2C9068F12910F4AB00570B9F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9068F02910F4AB00570B9F /* AppDelegate.m */; };
+		2C9068F42910F4AB00570B9F /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9068F32910F4AB00570B9F /* SceneDelegate.m */; };
+		2C9068F72910F4AB00570B9F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9068F62910F4AB00570B9F /* ViewController.m */; };
+		2C9068FA2910F4AB00570B9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C9068F82910F4AB00570B9F /* Main.storyboard */; };
+		2C9068FC2910F4AD00570B9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C9068FB2910F4AD00570B9F /* Assets.xcassets */; };
+		2C9068FF2910F4AD00570B9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C9068FD2910F4AD00570B9F /* LaunchScreen.storyboard */; };
+		2C9069022910F4AD00570B9F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9069012910F4AD00570B9F /* main.m */; };
+		2C90690C2910F4AD00570B9F /* DreamTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C90690B2910F4AD00570B9F /* DreamTests.m */; };
+		2C9069162910F4AD00570B9F /* DreamUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9069152910F4AD00570B9F /* DreamUITests.m */; };
+		2C9069182910F4AD00570B9F /* DreamUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9069172910F4AD00570B9F /* DreamUITestsLaunchTests.m */; };
+		2C906930291360BF00570B9F /* DreamFileUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C90692F291360BF00570B9F /* DreamFileUtil.m */; };
+		2C9069352913665E00570B9F /* dream.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C9069332913665E00570B9F /* dream.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2C9069082910F4AD00570B9F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C9068E42910F4AB00570B9F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C9068EB2910F4AB00570B9F;
+			remoteInfo = Dream;
+		};
+		2C9069122910F4AD00570B9F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C9068E42910F4AB00570B9F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C9068EB2910F4AB00570B9F;
+			remoteInfo = Dream;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2C9068EC2910F4AB00570B9F /* Dream.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dream.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C9068EF2910F4AB00570B9F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2C9068F02910F4AB00570B9F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2C9068F22910F4AB00570B9F /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		2C9068F32910F4AB00570B9F /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		2C9068F52910F4AB00570B9F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2C9068F62910F4AB00570B9F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2C9068F92910F4AB00570B9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2C9068FB2910F4AD00570B9F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2C9068FE2910F4AD00570B9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2C9069002910F4AD00570B9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C9069012910F4AD00570B9F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2C9069072910F4AD00570B9F /* DreamTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DreamTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C90690B2910F4AD00570B9F /* DreamTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DreamTests.m; sourceTree = "<group>"; };
+		2C9069112910F4AD00570B9F /* DreamUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DreamUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C9069152910F4AD00570B9F /* DreamUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DreamUITests.m; sourceTree = "<group>"; };
+		2C9069172910F4AD00570B9F /* DreamUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DreamUITestsLaunchTests.m; sourceTree = "<group>"; };
+		2C90692E291360BF00570B9F /* DreamFileUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DreamFileUtil.h; sourceTree = "<group>"; };
+		2C90692F291360BF00570B9F /* DreamFileUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DreamFileUtil.m; sourceTree = "<group>"; };
+		2C9069332913665E00570B9F /* dream.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = dream.a; sourceTree = "<group>"; };
+		2C9069342913665E00570B9F /* dream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dream.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2C9068E92910F4AB00570B9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C9069352913665E00570B9F /* dream.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C9069042910F4AD00570B9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C90690E2910F4AD00570B9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2C9068E32910F4AB00570B9F = {
+			isa = PBXGroup;
+			children = (
+				2C9068EE2910F4AB00570B9F /* Dream */,
+				2C90690A2910F4AD00570B9F /* DreamTests */,
+				2C9069142910F4AD00570B9F /* DreamUITests */,
+				2C9068ED2910F4AB00570B9F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2C9068ED2910F4AB00570B9F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2C9068EC2910F4AB00570B9F /* Dream.app */,
+				2C9069072910F4AD00570B9F /* DreamTests.xctest */,
+				2C9069112910F4AD00570B9F /* DreamUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2C9068EE2910F4AB00570B9F /* Dream */ = {
+			isa = PBXGroup;
+			children = (
+				2C9069312913652400570B9F /* Lib */,
+				2C90692D2913609900570B9F /* Util */,
+				2C9068EF2910F4AB00570B9F /* AppDelegate.h */,
+				2C9068F02910F4AB00570B9F /* AppDelegate.m */,
+				2C9068F22910F4AB00570B9F /* SceneDelegate.h */,
+				2C9068F32910F4AB00570B9F /* SceneDelegate.m */,
+				2C9068F52910F4AB00570B9F /* ViewController.h */,
+				2C9068F62910F4AB00570B9F /* ViewController.m */,
+				2C9068F82910F4AB00570B9F /* Main.storyboard */,
+				2C9068FB2910F4AD00570B9F /* Assets.xcassets */,
+				2C9068FD2910F4AD00570B9F /* LaunchScreen.storyboard */,
+				2C9069002910F4AD00570B9F /* Info.plist */,
+				2C9069012910F4AD00570B9F /* main.m */,
+			);
+			path = Dream;
+			sourceTree = "<group>";
+		};
+		2C90690A2910F4AD00570B9F /* DreamTests */ = {
+			isa = PBXGroup;
+			children = (
+				2C90690B2910F4AD00570B9F /* DreamTests.m */,
+			);
+			path = DreamTests;
+			sourceTree = "<group>";
+		};
+		2C9069142910F4AD00570B9F /* DreamUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2C9069152910F4AD00570B9F /* DreamUITests.m */,
+				2C9069172910F4AD00570B9F /* DreamUITestsLaunchTests.m */,
+			);
+			path = DreamUITests;
+			sourceTree = "<group>";
+		};
+		2C90692D2913609900570B9F /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				2C90692E291360BF00570B9F /* DreamFileUtil.h */,
+				2C90692F291360BF00570B9F /* DreamFileUtil.m */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		2C9069312913652400570B9F /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				2C9069322913663F00570B9F /* Dream */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		2C9069322913663F00570B9F /* Dream */ = {
+			isa = PBXGroup;
+			children = (
+				2C9069332913665E00570B9F /* dream.a */,
+				2C9069342913665E00570B9F /* dream.h */,
+			);
+			path = Dream;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2C9068EB2910F4AB00570B9F /* Dream */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C90691B2910F4AD00570B9F /* Build configuration list for PBXNativeTarget "Dream" */;
+			buildPhases = (
+				2C9068E82910F4AB00570B9F /* Sources */,
+				2C9068E92910F4AB00570B9F /* Frameworks */,
+				2C9068EA2910F4AB00570B9F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Dream;
+			productName = Dream;
+			productReference = 2C9068EC2910F4AB00570B9F /* Dream.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2C9069062910F4AD00570B9F /* DreamTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C90691E2910F4AD00570B9F /* Build configuration list for PBXNativeTarget "DreamTests" */;
+			buildPhases = (
+				2C9069032910F4AD00570B9F /* Sources */,
+				2C9069042910F4AD00570B9F /* Frameworks */,
+				2C9069052910F4AD00570B9F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2C9069092910F4AD00570B9F /* PBXTargetDependency */,
+			);
+			name = DreamTests;
+			productName = DreamTests;
+			productReference = 2C9069072910F4AD00570B9F /* DreamTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2C9069102910F4AD00570B9F /* DreamUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C9069212910F4AD00570B9F /* Build configuration list for PBXNativeTarget "DreamUITests" */;
+			buildPhases = (
+				2C90690D2910F4AD00570B9F /* Sources */,
+				2C90690E2910F4AD00570B9F /* Frameworks */,
+				2C90690F2910F4AD00570B9F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2C9069132910F4AD00570B9F /* PBXTargetDependency */,
+			);
+			name = DreamUITests;
+			productName = DreamUITests;
+			productReference = 2C9069112910F4AD00570B9F /* DreamUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2C9068E42910F4AB00570B9F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					2C9068EB2910F4AB00570B9F = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					2C9069062910F4AD00570B9F = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 2C9068EB2910F4AB00570B9F;
+					};
+					2C9069102910F4AD00570B9F = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 2C9068EB2910F4AB00570B9F;
+					};
+				};
+			};
+			buildConfigurationList = 2C9068E72910F4AB00570B9F /* Build configuration list for PBXProject "Dream" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2C9068E32910F4AB00570B9F;
+			productRefGroup = 2C9068ED2910F4AB00570B9F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2C9068EB2910F4AB00570B9F /* Dream */,
+				2C9069062910F4AD00570B9F /* DreamTests */,
+				2C9069102910F4AD00570B9F /* DreamUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2C9068EA2910F4AB00570B9F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C9068FF2910F4AD00570B9F /* LaunchScreen.storyboard in Resources */,
+				2C9068FC2910F4AD00570B9F /* Assets.xcassets in Resources */,
+				2C9068FA2910F4AB00570B9F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C9069052910F4AD00570B9F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C90690F2910F4AD00570B9F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2C9068E82910F4AB00570B9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C9068F72910F4AB00570B9F /* ViewController.m in Sources */,
+				2C9068F12910F4AB00570B9F /* AppDelegate.m in Sources */,
+				2C9069022910F4AD00570B9F /* main.m in Sources */,
+				2C906930291360BF00570B9F /* DreamFileUtil.m in Sources */,
+				2C9068F42910F4AB00570B9F /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C9069032910F4AD00570B9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C90690C2910F4AD00570B9F /* DreamTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C90690D2910F4AD00570B9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C9069182910F4AD00570B9F /* DreamUITestsLaunchTests.m in Sources */,
+				2C9069162910F4AD00570B9F /* DreamUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2C9069092910F4AD00570B9F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2C9068EB2910F4AB00570B9F /* Dream */;
+			targetProxy = 2C9069082910F4AD00570B9F /* PBXContainerItemProxy */;
+		};
+		2C9069132910F4AD00570B9F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2C9068EB2910F4AB00570B9F /* Dream */;
+			targetProxy = 2C9069122910F4AD00570B9F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2C9068F82910F4AB00570B9F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C9068F92910F4AB00570B9F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2C9068FD2910F4AD00570B9F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C9068FE2910F4AD00570B9F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2C9069192910F4AD00570B9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2C90691A2910F4AD00570B9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2C90691C2910F4AD00570B9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4NSTUAAVZT;
+				ENABLE_BITCODE = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Dream/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Dream",
+					"$(PROJECT_DIR)/Dream/Lib/Dream",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.volientduan.Dream;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2C90691D2910F4AD00570B9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4NSTUAAVZT;
+				ENABLE_BITCODE = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Dream/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Dream",
+					"$(PROJECT_DIR)/Dream/Lib/Dream",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.volientduan.Dream;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2C90691F2910F4AD00570B9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4NSTUAAVZT;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.volientduan.DreamTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dream.app/Dream";
+			};
+			name = Debug;
+		};
+		2C9069202910F4AD00570B9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4NSTUAAVZT;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.volientduan.DreamTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dream.app/Dream";
+			};
+			name = Release;
+		};
+		2C9069222910F4AD00570B9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4NSTUAAVZT;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.volientduan.DreamUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Dream;
+			};
+			name = Debug;
+		};
+		2C9069232910F4AD00570B9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4NSTUAAVZT;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.volientduan.DreamUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Dream;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2C9068E72910F4AB00570B9F /* Build configuration list for PBXProject "Dream" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C9069192910F4AD00570B9F /* Debug */,
+				2C90691A2910F4AD00570B9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C90691B2910F4AD00570B9F /* Build configuration list for PBXNativeTarget "Dream" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C90691C2910F4AD00570B9F /* Debug */,
+				2C90691D2910F4AD00570B9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C90691E2910F4AD00570B9F /* Build configuration list for PBXNativeTarget "DreamTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C90691F2910F4AD00570B9F /* Debug */,
+				2C9069202910F4AD00570B9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C9069212910F4AD00570B9F /* Build configuration list for PBXNativeTarget "DreamUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C9069222910F4AD00570B9F /* Debug */,
+				2C9069232910F4AD00570B9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2C9068E42910F4AB00570B9F /* Project object */;
+}
