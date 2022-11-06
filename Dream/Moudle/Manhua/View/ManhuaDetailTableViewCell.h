@@ -11,7 +11,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface ManhuaDetailTableViewCell : UITableViewCell
 
-+ (instancetype)cellWithTableView:(UITableView *)tableView model:(id)model;
++ (instancetype)cellWithTableView:(UITableView *)tableView model:(id)model block:(void(^)(NSString *url, CGFloat height))block;
 
 @end
 

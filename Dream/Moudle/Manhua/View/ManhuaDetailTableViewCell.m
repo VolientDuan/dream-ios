@@ -11,6 +11,7 @@
 
 @interface ManhuaDetailTableViewCell()
 @property (nonatomic, strong) UIImageView *detailImageView;
+@property (nonatomic, copy) void (^block)(NSString *url, CGFloat height);
 
 @end
 @implementation ManhuaDetailTableViewCell
@@ -26,11 +27,12 @@
     // Configure the view for the selected state
 }
 
-+ (instancetype)cellWithTableView:(UITableView *)tableView model:(id)model {
++ (instancetype)cellWithTableView:(UITableView *)tableView model:(id)model block:(nonnull void (^)(NSString * _Nonnull, CGFloat))block {
     ManhuaDetailTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ManhuaDetailTableViewCell"];
     if (!cell) {
         cell = [[ManhuaDetailTableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"ManhuaDetailTableViewCell"];
     }
+    cell.block = block;
     [cell prepareUrl:model retryTime:5];
     return cell;
 }
@@ -58,21 +60,20 @@
             return;
         }
         CGSize size = image.size;
-        [weakSelf.detailImageView mas_updateConstraints:^(MASConstraintMaker *make) {
-            make.height.mas_equalTo(UIScreen.mainScreen.bounds.size.width * (size.height/size.width));
-        }];
+        if (weakSelf.block) {
+            weakSelf.block(imgUrl, UIScreen.mainScreen.bounds.size.width * (size.height/size.width));
+        }
     }];
 }
 
 - (void)initUI
 {
     self.contentView.backgroundColor = [UIColor colorNamed:@"viewBgColor"];
+    self.selectionStyle = UITableViewCellSelectionStyleNone;
     self.detailImageView  = [[UIImageView alloc]init];
     [self.contentView addSubview:self.detailImageView];
     [self.detailImageView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.width.mas_equalTo(UIScreen.mainScreen.bounds.size.width);
-        make.height.mas_equalTo(UIScreen.mainScreen.bounds.size.width);
-        make.top.leading.trailing.bottom.equalTo(self.contentView);
+        make.edges.mas_equalTo(UIEdgeInsetsZero);
     }];
 }
 

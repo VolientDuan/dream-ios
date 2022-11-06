@@ -14,10 +14,19 @@
 @interface ManhuaDetailController ()<UITableViewDelegate, UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) NSMutableArray *dataArray;
+@property (nonatomic, strong) NSMutableDictionary *imgHeightDic;
 
 @end
 
 @implementation ManhuaDetailController
+
+- (NSMutableDictionary *)imgHeightDic
+{
+    if (!_imgHeightDic) {
+        _imgHeightDic = [NSMutableDictionary dictionary];
+    }
+    return _imgHeightDic;
+}
 
 - (NSMutableArray *)dataArray
 {
@@ -42,6 +51,7 @@
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     self.tableView.backgroundColor = [UIColor colorNamed:@"viewBgColor"];
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     [self.view addSubview:self.tableView];
     [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.view.mas_safeAreaLayoutGuideTop);
@@ -103,7 +113,11 @@
 
 - (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return UIScreen.mainScreen.bounds.size.height;
+    NSNumber *height = self.chapterDic[self.dataArray[indexPath.row]];
+    if (!height) {
+        return UIScreen.mainScreen.bounds.size.width;
+    }
+    return ceil(height.floatValue);
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -113,7 +127,15 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return [ManhuaDetailTableViewCell cellWithTableView:tableView model:self.dataArray[indexPath.row]];
+    __weak __typeof(self) weakSelf = self;
+    return [ManhuaDetailTableViewCell cellWithTableView:tableView model:self.dataArray[indexPath.row] block:^(NSString * _Nonnull url, CGFloat height) {
+        if (weakSelf.imgHeightDic[url]) {
+            return;
+        }
+        weakSelf.imgHeightDic[url] = @(height);
+        NSInteger index = [weakSelf.dataArray indexOfObject:url];
+        [weakSelf.tableView reloadRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:index inSection:0]] withRowAnimation:UITableViewRowAnimationNone];
+    }];
 }
 
 

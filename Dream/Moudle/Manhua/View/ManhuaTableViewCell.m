@@ -65,7 +65,6 @@
     [self.coverView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.size.mas_equalTo(CGSizeMake(80, 80));
         make.leading.top.mas_equalTo(12);
-        make.bottom.mas_equalTo(-12);
     }];
     
     self.nameLabel = [UILabel new];
