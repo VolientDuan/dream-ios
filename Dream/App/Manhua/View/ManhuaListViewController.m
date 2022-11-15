@@ -1,11 +1,11 @@
 //
-//  ViewController.m
+//  ManhuaListViewController.m
 //  Dream
 //
 //  Created by duanxiancai on 2022/11/1.
 //
 
-#import "ViewController.h"
+#import "ManhuaListViewController.h"
 #import "dream.h"
 #import "DreamFileUtil.h"
 #import <Masonry/Masonry.h>
@@ -17,7 +17,7 @@
 #import <MJRefresh.h>
 #import "ManhuaRequestHeader.h"
 
-@interface ViewController () <UITextFieldDelegate, UITableViewDelegate, UITableViewDataSource>
+@interface ManhuaListViewController () <UITextFieldDelegate, UITableViewDelegate, UITableViewDataSource>
 @property (nonatomic, strong) UITextField *searchTextFiled;
 @property (nonatomic, strong) UITableView *tableView;
 
@@ -31,7 +31,7 @@ void logFunc(const char *msg)
     NSLog(@"%@",[[NSString alloc]initWithUTF8String:msg]);
 }
 
-@implementation ViewController
+@implementation ManhuaListViewController
 
 - (NSMutableArray *)dataArray
 {
